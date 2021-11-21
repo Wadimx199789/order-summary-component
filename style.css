@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+html{
+    font-size: 62,5%;
+}
+body{
+    font-family:var(--familie);
+    font-size: var(--fs-base);
+    color:var(--pale-blue);
+}
+.wrapper{
+    padding:2rem;
+    max-width: 1460px;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    background: url(./images/pattern-background-desktop.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: var(--pale-blue);
+    background-position: top;
+}
+.card{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+
+}
+.card__hero{
+    width: 100%;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+}
+.card__container{
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    background-color: #fff;
+    padding:3rem
+}
+.card__title{
+    font-weight:var(--weight-extra-bold);
+    color:var(--dark-blue);
+    text-align: center;
+}
+.card__description{
+    padding:1.5rem;
+    max-width:25rem;
+    text-align: center;
+}
+.card__plan-box{
+    border-radius: 1rem;
+    background-color: var(--very-pale-blue);
+    align-items: center;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom:2rem;
+}
+.card__anual-title{
+    font-weight:var(--weight-extra-bold);
+    color:var(--dark-blue);
+}
+.btn__proceed{
+    background-color: var(--bright-blue);
+    text-align: center;
+    padding:1rem 5rem;
+    border-radius: 1rem;
+    font-weight: var(--weight-extra-bold);
+    cursor: pointer;
+    margin-bottom:2rem;
+}
+.btn__cancel{
+    color: var(--dark-blue);
+    display: block;
+    text-align: center;
+}
